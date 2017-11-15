@@ -1,0 +1,653 @@
+[95m    [NORMAL]  [0m[95m<LoadData> [0mLoading data for Geometry...
+     file=/home/david/uboone/larlite/core/LArUtil/dat/larutil_microboone.root 
+[95m    [NORMAL]  [0m[95m<LoadData> [0mLoading data for DetectorProperties...
+     file=/home/david/uboone/larlite/core/LArUtil/dat/larutil_microboone.root 
+[95m    [NORMAL]  [0m[95m<LoadData> [0mLoading data for LArProperties...
+     file=/home/david/uboone/larlite/core/LArUtil/dat/larutil_microboone.root 
+[95m    [NORMAL]  [0m[95m<open> [0mOpening a file in READ mode: /home/david/uboone/data/mcc81/5E19_handscanned/nutrkremoval.root
+[95m    [NORMAL]  [0m[95m<open> [0mOpening a file in READ mode: /home/david/uboone/data/mcc81/5E19_handscanned/simplecluster.root
+[95m    [NORMAL]  [0m[95m<open> [0mOpening a file in kWRITE mode: merge.root
+[93m   [WARNING]  [0m[95m<initialize> [0mAnalysis output file will not be created for this time...
+[95m    [NORMAL]  [0m[95m<run> [0mProcessing 1 events from entry 184...
+
+
+
+****** PLANE 0 *****
+
+
+
+New cluster @ Plane 0	 Nhits = 54	 angle = 40.7488
+Current gamma00 angle : 0	 gamma01 angle : 0
+	 updating gamma00
+
+
+New cluster @ Plane 0	 Nhits = 2	 angle = 292.612
+Current gamma00 angle : 40.7488	 gamma01 angle : 0
+	 updating gamma01
+
+
+New cluster @ Plane 0	 Nhits = 5	 angle = 284.791
+Current gamma00 angle : 40.7488	 gamma01 angle : 292.612
+	 updating gamma01
+
+
+New cluster @ Plane 0	 Nhits = 3	 angle = 284.889
+Current gamma00 angle : 40.7488	 gamma01 angle : 284.791
+
+
+New cluster @ Plane 0	 Nhits = 2	 angle = 289.23
+Current gamma00 angle : 40.7488	 gamma01 angle : 284.791
+
+
+New cluster @ Plane 0	 Nhits = 6	 angle = 284.843
+Current gamma00 angle : 40.7488	 gamma01 angle : 284.791
+	 updating gamma01
+
+
+New cluster @ Plane 0	 Nhits = 34	 angle = 281.074
+Current gamma00 angle : 40.7488	 gamma01 angle : 284.843
+	 updating gamma01
+
+
+New cluster @ Plane 0	 Nhits = 2	 angle = 320.659
+Current gamma00 angle : 40.7488	 gamma01 angle : 281.074
+
+
+New cluster @ Plane 0	 Nhits = 34	 angle = 298.411
+Current gamma00 angle : 40.7488	 gamma01 angle : 281.074
+
+
+New cluster @ Plane 0	 Nhits = 6	 angle = 271.551
+Current gamma00 angle : 40.7488	 gamma01 angle : 281.074
+
+
+New cluster @ Plane 0	 Nhits = 7	 angle = 89.1803
+Current gamma00 angle : 40.7488	 gamma01 angle : 281.074
+
+
+New cluster @ Plane 0	 Nhits = 2	 angle = 272.014
+Current gamma00 angle : 40.7488	 gamma01 angle : 281.074
+
+
+New cluster @ Plane 0	 Nhits = 25	 angle = 238.325
+Current gamma00 angle : 40.7488	 gamma01 angle : 281.074
+
+
+New cluster @ Plane 0	 Nhits = 32	 angle = 239.917
+Current gamma00 angle : 40.7488	 gamma01 angle : 281.074
+
+
+New cluster @ Plane 0	 Nhits = 2	 angle = 203.773
+Current gamma00 angle : 40.7488	 gamma01 angle : 281.074
+
+
+New cluster @ Plane 0	 Nhits = 2	 angle = 192.914
+Current gamma00 angle : 40.7488	 gamma01 angle : 281.074
+
+
+ gamma00 has 54 hits and 40.7488 angle
+ gamma01 has 34 hits and 281.074 angle
+new cluster with 34 hits and angle 298.411
+	 small : 17.3376	 angle large : 257.663
+new cluster with 25 hits and angle 238.325
+	 small : 42.7486	 angle large : 197.576
+new cluster with 32 hits and angle 239.917
+	 small : 41.1566	 angle large : 199.168
+identified 0 clusters to merge with gamma00
+identified 0 clusters to merge with gamma01
+
+
+
+****** PLANE 1 *****
+
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 14.6708
+Current gamma00 angle : 0	 gamma01 angle : 0
+	 updating gamma00
+
+
+New cluster @ Plane 1	 Nhits = 10	 angle = 344.194
+Current gamma00 angle : 14.6708	 gamma01 angle : 0
+	 updating gamma00
+
+
+New cluster @ Plane 1	 Nhits = 6	 angle = 336.825
+Current gamma00 angle : 344.194	 gamma01 angle : 0
+
+
+New cluster @ Plane 1	 Nhits = 8	 angle = 335.404
+Current gamma00 angle : 344.194	 gamma01 angle : 0
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 325.99
+Current gamma00 angle : 344.194	 gamma01 angle : 0
+	 updating gamma01
+
+
+New cluster @ Plane 1	 Nhits = 6	 angle = 321.02
+Current gamma00 angle : 344.194	 gamma01 angle : 325.99
+	 updating gamma01
+
+
+New cluster @ Plane 1	 Nhits = 4	 angle = 27.2972
+Current gamma00 angle : 344.194	 gamma01 angle : 321.02
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 6.39657
+Current gamma00 angle : 344.194	 gamma01 angle : 321.02
+
+
+New cluster @ Plane 1	 Nhits = 3	 angle = 30.1152
+Current gamma00 angle : 344.194	 gamma01 angle : 321.02
+
+
+New cluster @ Plane 1	 Nhits = 4	 angle = 24.8617
+Current gamma00 angle : 344.194	 gamma01 angle : 321.02
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 23.1919
+Current gamma00 angle : 344.194	 gamma01 angle : 321.02
+
+
+New cluster @ Plane 1	 Nhits = 3	 angle = 21.1905
+Current gamma00 angle : 344.194	 gamma01 angle : 321.02
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 12.7459
+Current gamma00 angle : 344.194	 gamma01 angle : 321.02
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 10.9751
+Current gamma00 angle : 344.194	 gamma01 angle : 321.02
+
+
+New cluster @ Plane 1	 Nhits = 3	 angle = 2.5523
+Current gamma00 angle : 344.194	 gamma01 angle : 321.02
+
+
+New cluster @ Plane 1	 Nhits = 4	 angle = 349.959
+Current gamma00 angle : 344.194	 gamma01 angle : 321.02
+
+
+New cluster @ Plane 1	 Nhits = 4	 angle = 341.746
+Current gamma00 angle : 344.194	 gamma01 angle : 321.02
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 328.808
+Current gamma00 angle : 344.194	 gamma01 angle : 321.02
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 325.329
+Current gamma00 angle : 344.194	 gamma01 angle : 321.02
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 321.421
+Current gamma00 angle : 344.194	 gamma01 angle : 321.02
+
+
+New cluster @ Plane 1	 Nhits = 3	 angle = 316.902
+Current gamma00 angle : 344.194	 gamma01 angle : 321.02
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 315.712
+Current gamma00 angle : 344.194	 gamma01 angle : 321.02
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 314.955
+Current gamma00 angle : 344.194	 gamma01 angle : 321.02
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 312.607
+Current gamma00 angle : 344.194	 gamma01 angle : 321.02
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 311.723
+Current gamma00 angle : 344.194	 gamma01 angle : 321.02
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 310.235
+Current gamma00 angle : 344.194	 gamma01 angle : 321.02
+
+
+New cluster @ Plane 1	 Nhits = 4	 angle = 319.248
+Current gamma00 angle : 344.194	 gamma01 angle : 321.02
+
+
+New cluster @ Plane 1	 Nhits = 12	 angle = 316.221
+Current gamma00 angle : 344.194	 gamma01 angle : 321.02
+	 updating gamma00
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 53.8277
+Current gamma00 angle : 316.221	 gamma01 angle : 321.02
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 37.1735
+Current gamma00 angle : 316.221	 gamma01 angle : 321.02
+
+
+New cluster @ Plane 1	 Nhits = 13	 angle = 341.792
+Current gamma00 angle : 316.221	 gamma01 angle : 321.02
+	 updating gamma00
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 335.425
+Current gamma00 angle : 341.792	 gamma01 angle : 321.02
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 332.545
+Current gamma00 angle : 341.792	 gamma01 angle : 321.02
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 329.617
+Current gamma00 angle : 341.792	 gamma01 angle : 321.02
+
+
+New cluster @ Plane 1	 Nhits = 3	 angle = 327.514
+Current gamma00 angle : 341.792	 gamma01 angle : 321.02
+
+
+New cluster @ Plane 1	 Nhits = 3	 angle = 319.675
+Current gamma00 angle : 341.792	 gamma01 angle : 321.02
+
+
+New cluster @ Plane 1	 Nhits = 14	 angle = 304.777
+Current gamma00 angle : 341.792	 gamma01 angle : 321.02
+	 updating gamma00
+
+
+New cluster @ Plane 1	 Nhits = 4	 angle = 303.188
+Current gamma00 angle : 304.777	 gamma01 angle : 321.02
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 4.06317
+Current gamma00 angle : 304.777	 gamma01 angle : 321.02
+
+
+New cluster @ Plane 1	 Nhits = 3	 angle = 337.472
+Current gamma00 angle : 304.777	 gamma01 angle : 321.02
+
+
+New cluster @ Plane 1	 Nhits = 3	 angle = 335.219
+Current gamma00 angle : 304.777	 gamma01 angle : 321.02
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 328.808
+Current gamma00 angle : 304.777	 gamma01 angle : 321.02
+
+
+New cluster @ Plane 1	 Nhits = 9	 angle = 348.473
+Current gamma00 angle : 304.777	 gamma01 angle : 321.02
+	 updating gamma01
+
+
+New cluster @ Plane 1	 Nhits = 15	 angle = 39.0864
+Current gamma00 angle : 304.777	 gamma01 angle : 348.473
+	 updating gamma00
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 338.086
+Current gamma00 angle : 39.0864	 gamma01 angle : 348.473
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 356.914
+Current gamma00 angle : 39.0864	 gamma01 angle : 348.473
+
+
+New cluster @ Plane 1	 Nhits = 7	 angle = 283.587
+Current gamma00 angle : 39.0864	 gamma01 angle : 348.473
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 342.258
+Current gamma00 angle : 39.0864	 gamma01 angle : 348.473
+
+
+New cluster @ Plane 1	 Nhits = 3	 angle = 92.3344
+Current gamma00 angle : 39.0864	 gamma01 angle : 348.473
+
+
+New cluster @ Plane 1	 Nhits = 3	 angle = 95.2949
+Current gamma00 angle : 39.0864	 gamma01 angle : 348.473
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 180.816
+Current gamma00 angle : 39.0864	 gamma01 angle : 348.473
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 232.22
+Current gamma00 angle : 39.0864	 gamma01 angle : 348.473
+
+
+New cluster @ Plane 1	 Nhits = 3	 angle = 245.41
+Current gamma00 angle : 39.0864	 gamma01 angle : 348.473
+
+
+New cluster @ Plane 1	 Nhits = 6	 angle = 250.411
+Current gamma00 angle : 39.0864	 gamma01 angle : 348.473
+
+
+New cluster @ Plane 1	 Nhits = 4	 angle = 252.564
+Current gamma00 angle : 39.0864	 gamma01 angle : 348.473
+
+
+New cluster @ Plane 1	 Nhits = 3	 angle = 98.7098
+Current gamma00 angle : 39.0864	 gamma01 angle : 348.473
+
+
+New cluster @ Plane 1	 Nhits = 4	 angle = 109.328
+Current gamma00 angle : 39.0864	 gamma01 angle : 348.473
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 114.727
+Current gamma00 angle : 39.0864	 gamma01 angle : 348.473
+
+
+New cluster @ Plane 1	 Nhits = 3	 angle = 201.743
+Current gamma00 angle : 39.0864	 gamma01 angle : 348.473
+
+
+New cluster @ Plane 1	 Nhits = 4	 angle = 243.264
+Current gamma00 angle : 39.0864	 gamma01 angle : 348.473
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 261.799
+Current gamma00 angle : 39.0864	 gamma01 angle : 348.473
+
+
+New cluster @ Plane 1	 Nhits = 3	 angle = 111.886
+Current gamma00 angle : 39.0864	 gamma01 angle : 348.473
+
+
+New cluster @ Plane 1	 Nhits = 3	 angle = 175.537
+Current gamma00 angle : 39.0864	 gamma01 angle : 348.473
+
+
+New cluster @ Plane 1	 Nhits = 4	 angle = 260.824
+Current gamma00 angle : 39.0864	 gamma01 angle : 348.473
+
+
+New cluster @ Plane 1	 Nhits = 4	 angle = 99.8157
+Current gamma00 angle : 39.0864	 gamma01 angle : 348.473
+
+
+New cluster @ Plane 1	 Nhits = 3	 angle = 117.703
+Current gamma00 angle : 39.0864	 gamma01 angle : 348.473
+
+
+New cluster @ Plane 1	 Nhits = 4	 angle = 176.26
+Current gamma00 angle : 39.0864	 gamma01 angle : 348.473
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 199.87
+Current gamma00 angle : 39.0864	 gamma01 angle : 348.473
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 235.556
+Current gamma00 angle : 39.0864	 gamma01 angle : 348.473
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 240.145
+Current gamma00 angle : 39.0864	 gamma01 angle : 348.473
+
+
+New cluster @ Plane 1	 Nhits = 3	 angle = 248.468
+Current gamma00 angle : 39.0864	 gamma01 angle : 348.473
+
+
+New cluster @ Plane 1	 Nhits = 9	 angle = 101.719
+Current gamma00 angle : 39.0864	 gamma01 angle : 348.473
+
+
+New cluster @ Plane 1	 Nhits = 3	 angle = 103.628
+Current gamma00 angle : 39.0864	 gamma01 angle : 348.473
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 105.365
+Current gamma00 angle : 39.0864	 gamma01 angle : 348.473
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 119.745
+Current gamma00 angle : 39.0864	 gamma01 angle : 348.473
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 111.445
+Current gamma00 angle : 39.0864	 gamma01 angle : 348.473
+
+
+New cluster @ Plane 1	 Nhits = 4	 angle = 115.367
+Current gamma00 angle : 39.0864	 gamma01 angle : 348.473
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 128.528
+Current gamma00 angle : 39.0864	 gamma01 angle : 348.473
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 139.858
+Current gamma00 angle : 39.0864	 gamma01 angle : 348.473
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 151.352
+Current gamma00 angle : 39.0864	 gamma01 angle : 348.473
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 195.597
+Current gamma00 angle : 39.0864	 gamma01 angle : 348.473
+
+
+New cluster @ Plane 1	 Nhits = 4	 angle = 117.772
+Current gamma00 angle : 39.0864	 gamma01 angle : 348.473
+
+
+New cluster @ Plane 1	 Nhits = 11	 angle = 129.843
+Current gamma00 angle : 39.0864	 gamma01 angle : 348.473
+	 updating gamma01
+
+
+New cluster @ Plane 1	 Nhits = 4	 angle = 152.096
+Current gamma00 angle : 39.0864	 gamma01 angle : 129.843
+
+
+New cluster @ Plane 1	 Nhits = 3	 angle = 159.326
+Current gamma00 angle : 39.0864	 gamma01 angle : 129.843
+
+
+New cluster @ Plane 1	 Nhits = 8	 angle = 141.356
+Current gamma00 angle : 39.0864	 gamma01 angle : 129.843
+
+
+New cluster @ Plane 1	 Nhits = 3	 angle = 145.745
+Current gamma00 angle : 39.0864	 gamma01 angle : 129.843
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 170.231
+Current gamma00 angle : 39.0864	 gamma01 angle : 129.843
+
+
+New cluster @ Plane 1	 Nhits = 6	 angle = 194.827
+Current gamma00 angle : 39.0864	 gamma01 angle : 129.843
+
+
+New cluster @ Plane 1	 Nhits = 3	 angle = 219.986
+Current gamma00 angle : 39.0864	 gamma01 angle : 129.843
+
+
+New cluster @ Plane 1	 Nhits = 3	 angle = 235.715
+Current gamma00 angle : 39.0864	 gamma01 angle : 129.843
+
+
+New cluster @ Plane 1	 Nhits = 6	 angle = 241.472
+Current gamma00 angle : 39.0864	 gamma01 angle : 129.843
+
+
+New cluster @ Plane 1	 Nhits = 6	 angle = 146.525
+Current gamma00 angle : 39.0864	 gamma01 angle : 129.843
+
+
+New cluster @ Plane 1	 Nhits = 6	 angle = 152.792
+Current gamma00 angle : 39.0864	 gamma01 angle : 129.843
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 160.061
+Current gamma00 angle : 39.0864	 gamma01 angle : 129.843
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 240.793
+Current gamma00 angle : 39.0864	 gamma01 angle : 129.843
+
+
+New cluster @ Plane 1	 Nhits = 5	 angle = 138.497
+Current gamma00 angle : 39.0864	 gamma01 angle : 129.843
+
+
+New cluster @ Plane 1	 Nhits = 3	 angle = 170.244
+Current gamma00 angle : 39.0864	 gamma01 angle : 129.843
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 216.356
+Current gamma00 angle : 39.0864	 gamma01 angle : 129.843
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 219.767
+Current gamma00 angle : 39.0864	 gamma01 angle : 129.843
+
+
+New cluster @ Plane 1	 Nhits = 8	 angle = 236.018
+Current gamma00 angle : 39.0864	 gamma01 angle : 129.843
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 206.354
+Current gamma00 angle : 39.0864	 gamma01 angle : 129.843
+
+
+New cluster @ Plane 1	 Nhits = 3	 angle = 180.716
+Current gamma00 angle : 39.0864	 gamma01 angle : 129.843
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 201.858
+Current gamma00 angle : 39.0864	 gamma01 angle : 129.843
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 167.14
+Current gamma00 angle : 39.0864	 gamma01 angle : 129.843
+
+
+New cluster @ Plane 1	 Nhits = 4	 angle = 137.654
+Current gamma00 angle : 39.0864	 gamma01 angle : 129.843
+
+
+New cluster @ Plane 1	 Nhits = 3	 angle = 145.297
+Current gamma00 angle : 39.0864	 gamma01 angle : 129.843
+
+
+New cluster @ Plane 1	 Nhits = 3	 angle = 162.863
+Current gamma00 angle : 39.0864	 gamma01 angle : 129.843
+
+
+New cluster @ Plane 1	 Nhits = 3	 angle = 168.288
+Current gamma00 angle : 39.0864	 gamma01 angle : 129.843
+
+
+New cluster @ Plane 1	 Nhits = 3	 angle = 227.761
+Current gamma00 angle : 39.0864	 gamma01 angle : 129.843
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 198.116
+Current gamma00 angle : 39.0864	 gamma01 angle : 129.843
+
+
+New cluster @ Plane 1	 Nhits = 3	 angle = 198.018
+Current gamma00 angle : 39.0864	 gamma01 angle : 129.843
+
+
+New cluster @ Plane 1	 Nhits = 2	 angle = 207.219
+Current gamma00 angle : 39.0864	 gamma01 angle : 129.843
+
+
+New cluster @ Plane 1	 Nhits = 4	 angle = 197.732
+Current gamma00 angle : 39.0864	 gamma01 angle : 129.843
+
+
+ gamma00 has 15 hits and 39.0864 angle
+ gamma01 has 11 hits and 129.843 angle
+new cluster with 10 hits and angle 344.194
+	 small : 214.351	 angle large : 305.107
+new cluster with 12 hits and angle 316.221
+	 small : 186.379	 angle large : 277.135
+new cluster with 13 hits and angle 341.792
+	 small : 211.949	 angle large : 302.706
+new cluster with 14 hits and angle 304.777
+	 small : 174.934	 angle large : 265.69
+identified 0 clusters to merge with gamma00
+identified 0 clusters to merge with gamma01
+
+
+
+****** PLANE 2 *****
+
+
+
+New cluster @ Plane 2	 Nhits = 2	 angle = 34.4416
+Current gamma00 angle : 0	 gamma01 angle : 0
+	 updating gamma00
+
+
+New cluster @ Plane 2	 Nhits = 39	 angle = 33.9918
+Current gamma00 angle : 34.4416	 gamma01 angle : 0
+	 updating gamma00
+
+
+New cluster @ Plane 2	 Nhits = 2	 angle = 347.391
+Current gamma00 angle : 33.9918	 gamma01 angle : 0
+	 updating gamma01
+
+
+New cluster @ Plane 2	 Nhits = 4	 angle = 284.969
+Current gamma00 angle : 33.9918	 gamma01 angle : 347.391
+	 updating gamma01
+
+
+New cluster @ Plane 2	 Nhits = 12	 angle = 294.213
+Current gamma00 angle : 33.9918	 gamma01 angle : 284.969
+	 updating gamma01
+
+
+New cluster @ Plane 2	 Nhits = 2	 angle = 283.482
+Current gamma00 angle : 33.9918	 gamma01 angle : 294.213
+
+
+New cluster @ Plane 2	 Nhits = 23	 angle = 284.465
+Current gamma00 angle : 33.9918	 gamma01 angle : 294.213
+	 updating gamma01
+
+
+New cluster @ Plane 2	 Nhits = 42	 angle = 311.402
+Current gamma00 angle : 33.9918	 gamma01 angle : 284.465
+	 updating gamma00
+
+
+New cluster @ Plane 2	 Nhits = 2	 angle = 259.936
+Current gamma00 angle : 311.402	 gamma01 angle : 284.465
+
+
+New cluster @ Plane 2	 Nhits = 2	 angle = 255.885
+Current gamma00 angle : 311.402	 gamma01 angle : 284.465
+
+
+New cluster @ Plane 2	 Nhits = 3	 angle = 173.734
+Current gamma00 angle : 311.402	 gamma01 angle : 284.465
+
+
+New cluster @ Plane 2	 Nhits = 2	 angle = 141.969
+Current gamma00 angle : 311.402	 gamma01 angle : 284.465
+
+
+ gamma00 has 42 hits and 311.402 angle
+ gamma01 has 23 hits and 284.465 angle
+new cluster with 39 hits and angle 33.9918
+	 small : 250.473	 angle large : 277.41
+new cluster with 12 hits and angle 294.213
+	 small : 9.74817	 angle large : 17.189
+MERGE WITH 01
+identified 0 clusters to merge with gamma00
+identified 1 clusters to merge with gamma01

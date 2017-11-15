@@ -45,8 +45,10 @@ namespace btutil {
   };
 
   typedef std::vector<double> edep_info_t; // vector of energy deposition
+  typedef std::vector<double> qcol_info_t; // vector of charge collected
   
-  typedef std::map<unsigned int, ::btutil::edep_info_t > ch_info_t; // vector of time (index) for each edep (value)
+  typedef std::map<unsigned int, ::btutil::edep_info_t > ch_info_edep_t; // vector of time (index) for each edep (value)
+  typedef std::map<unsigned int, ::btutil::qcol_info_t > ch_info_qcol_t; // vector of time (index) for each edep (value)
   
   class MCBTAlg {
     
@@ -69,6 +71,11 @@ namespace btutil {
     const std::vector<double>& MCQSum(const size_t plane_id) const;
 
     /**
+       Returns MC energy sum per MCX for a specified plane
+     */
+    const std::vector<double>& MCESum(const size_t plane_id) const;
+
+    /**
        Relate Hit => MCShower/MCTrack (called MCX). 
        Returns a vector of double w/ length = # of relevant MCX + 1.
        Each entry is # drifted electrons from each relevant MCX.
@@ -76,6 +83,15 @@ namespace btutil {
        to any of relevant MCX.
     */      
     std::vector<double> MCQ(const WireRange_t& hit) const;
+
+    /**
+       Relate Hit => MCShower/MCTrack (called MCX). 
+       Returns a vector of double w/ length = # of relevant MCX + 1.
+       Each entry is # deposited electrons from each relevant MCX.
+       The last element contains a sum of drifted electrons that do not belong
+       to any of relevant MCX.
+    */      
+    std::vector<double> MCE(const WireRange_t& hit) const;
 
     /**
        Relate Hit => MCX. 
@@ -116,7 +132,8 @@ namespace btutil {
 
     void ProcessSimChannel(const std::vector<larlite::simch>& simch_v);
 
-    std::vector< ::btutil::ch_info_t> _event_info;
+    std::vector< ::btutil::ch_info_edep_t> _event_edep_info;
+    std::vector< ::btutil::ch_info_qcol_t> _event_qcol_info;
     std::vector<size_t> _trkid_to_index;
 
     /**
@@ -125,6 +142,7 @@ namespace btutil {
        2nd entry is the MCX index.
      */
     std::vector<std::vector<double> > _sum_mcq;
+    std::vector<std::vector<double> > _sum_mce;
     size_t _num_parts;
   };
 }

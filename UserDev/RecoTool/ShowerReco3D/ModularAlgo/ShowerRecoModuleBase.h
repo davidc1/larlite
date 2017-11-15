@@ -85,7 +85,6 @@ protected:
 
     TTree* _tree;
 
-
 };
 
 } // showerreco

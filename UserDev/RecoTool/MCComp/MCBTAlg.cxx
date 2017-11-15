@@ -17,13 +17,13 @@ namespace btutil {
     _num_parts = 0;
     _sum_mcq.clear();
     _trkid_to_index.clear();
-    _event_info.clear();
+    _event_edep_info.clear();
+    _event_qcol_info.clear();
     // 
     for(auto const& id : g4_trackid_v)
       Register(id);
     _num_parts++;
     ProcessSimChannel(simch_v);
-
   }
 
   void MCBTAlg::Reset(const std::vector<std::vector<unsigned int> >& g4_trackid_v,
@@ -31,8 +31,10 @@ namespace btutil {
   {
     _num_parts = 0;
     _sum_mcq.clear();
+    _sum_mce.clear();
     _trkid_to_index.clear();
-    _event_info.clear();
+    _event_edep_info.clear();
+    _event_qcol_info.clear();
     // 
     for(auto const& id : g4_trackid_v)
       Register(id);
@@ -46,13 +48,16 @@ namespace btutil {
     //art::ServiceHandle<geo::Geometry> geo;
     auto geo = ::larutil::Geometry::GetME();
     _sum_mcq.resize(geo->Nplanes(),std::vector<double>(_num_parts,0));
+    _sum_mce.resize(geo->Nplanes(),std::vector<double>(_num_parts,0));
     
     for(auto const& sch : simch_v) {
       
       auto const ch = sch.Channel();
-      if(_event_info.size() <= ch) _event_info.resize(ch+1);
+      if(_event_edep_info.size() <= ch) _event_edep_info.resize(ch+1);
+      if(_event_qcol_info.size() <= ch) _event_qcol_info.resize(ch+1);
       
-      auto& ch_info = _event_info[ch];
+      auto& ch_edep_info = _event_edep_info[ch];
+      auto& ch_qcol_info = _event_qcol_info[ch];
 
       //size_t plane = geo->ChannelToWire(ch)[0].Plane;
       size_t plane = geo->ChannelToPlane(ch);
@@ -62,9 +67,11 @@ namespace btutil {
 	auto const& time  = time_ide.first;
 	auto const& ide_v = time_ide.second;
 
-	auto& edep_info = ch_info[time];
+	auto& edep_info = ch_edep_info[time];
+	auto& qcol_info = ch_qcol_info[time];
 
 	if(!edep_info.size()) edep_info.resize(_num_parts,0);
+	if(!qcol_info.size()) qcol_info.resize(_num_parts,0);
 
 	for(auto const& ide : ide_v) {
 	  
@@ -86,12 +93,16 @@ namespace btutil {
 	    index = _trkid_to_index[ide_trk_id];
 	  }
 	  if(_num_parts <= index) {
-	    (*edep_info.rbegin()) += ide.numElectrons;
-	    (*(_sum_mcq[plane]).rbegin()) += ide.numElectrons;
+	    (*qcol_info.rbegin()) += ide.numElectrons;
+	    (*edep_info.rbegin()) += ide.energy;
+	    (*(_sum_mcq[plane]).rbegin()) += ide.energy;
+	    (*(_sum_mce[plane]).rbegin()) += ide.numElectrons;
 	  }
 	  else {
-	    edep_info[index] += ide.numElectrons;
-	    _sum_mcq[plane][index] += ide.numElectrons;
+	    edep_info[index] += ide.energy;
+	    qcol_info[index] += ide.numElectrons;
+	    _sum_mcq[plane][index] += ide.energy;
+	    _sum_mce[plane][index] += ide.numElectrons;
 	  }
 	}
       }
@@ -105,27 +116,61 @@ namespace btutil {
     return _sum_mcq[plane_id];
   }
 
+  const std::vector<double>& MCBTAlg::MCESum(const size_t plane_id) const
+  {
+    if(plane_id > _sum_mce.size())
+      throw MCBTException(Form("Invalid plane requested: %zu",plane_id));
+    return _sum_mce[plane_id];
+  }
+
   std::vector<double> MCBTAlg::MCQ(const WireRange_t& hit) const
   {
     std::vector<double> res(_num_parts,0);
     
-    if(_event_info.size() <= hit.ch) return res;
+    if(_event_edep_info.size() <= hit.ch) return res;
     
-    auto const& ch_info = _event_info[hit.ch];
+    auto const& ch_edep_info = _event_edep_info[hit.ch];
 
     //art::ServiceHandle<util::TimeService> ts;
     auto ts = ::larutil::TimeService::GetME();
 
-    auto itlow = ch_info.lower_bound((unsigned int)(ts->TPCTick2TDC(hit.start)));
-    auto itup  = ch_info.upper_bound((unsigned int)(ts->TPCTick2TDC(hit.end))+1);
+    auto itlow = ch_edep_info.lower_bound((unsigned int)(ts->TPCTick2TDC(hit.start)));
+    auto itup  = ch_edep_info.upper_bound((unsigned int)(ts->TPCTick2TDC(hit.end))+1);
 
-    while(itlow != ch_info.end() && itlow != itup) {
+    while(itlow != ch_edep_info.end() && itlow != itup) {
       
       auto const& edep_info = (*itlow).second;
       
       for(size_t part_index = 0; part_index<_num_parts; ++part_index)
 	
 	res[part_index] += edep_info[part_index];
+      
+      ++itlow;
+    }
+    return res;
+  }
+
+  std::vector<double> MCBTAlg::MCE(const WireRange_t& hit) const
+  {
+    std::vector<double> res(_num_parts,0);
+    
+    if(_event_qcol_info.size() <= hit.ch) return res;
+    
+    auto const& ch_qcol_info = _event_qcol_info[hit.ch];
+
+    //art::ServiceHandle<util::TimeService> ts;
+    auto ts = ::larutil::TimeService::GetME();
+
+    auto itlow = ch_qcol_info.lower_bound((unsigned int)(ts->TPCTick2TDC(hit.start)));
+    auto itup  = ch_qcol_info.upper_bound((unsigned int)(ts->TPCTick2TDC(hit.end))+1);
+
+    while(itlow != ch_qcol_info.end() && itlow != itup) {
+      
+      auto const& qcol_info = (*itlow).second;
+      
+      for(size_t part_index = 0; part_index<_num_parts; ++part_index)
+	
+	res[part_index] += qcol_info[part_index];
       
       ++itlow;
     }
