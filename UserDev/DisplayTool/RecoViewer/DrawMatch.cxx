@@ -2,8 +2,6 @@
 #define EVD_DRAWMATCH_CXX
 
 #include "DrawMatch.h"
-#include "CMTool/CMTAlgMatch/CFAlgoTimeOverlap.h"
-#include "CMTool/CMTAlgPriority/CPAlgoNHits.h"
 
 namespace evd {
 
@@ -130,16 +128,16 @@ bool DrawMatch::analyze(larlite::storage_manager* storage) {
         // Hit(float w, float t, float c, float r) :
 
         _dataByPlane.at(view).back().emplace_back(
-          Hit2D(hit.WireID().Wire,
-                hit.PeakTime(),
-                hit.Integral(),
-                hit.RMS(),
-                hit.StartTick(),
-                hit.PeakTime(),
-                hit.EndTick(),
-                hit.PeakAmplitude()
-               ));
-
+						  Hit2D(hit.WireID().Wire,
+							hit.PeakTime(),
+							hit.Integral(),
+							hit.RMS(),
+							hit.StartTick(),
+							hit.PeakTime(),
+							hit.EndTick(),
+							hit.PeakAmplitude()
+							));
+	
 
         // Determine if this hit should change the view range:
         if (hit.WireID().Wire > _wireRange.at(view).second)
